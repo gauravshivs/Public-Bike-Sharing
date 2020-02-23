@@ -89,11 +89,11 @@ Hence which can be used for reallocation by
 
 and 
 
-`if Bikes_Required > Docks_Available 
+`if Bikes_Required > Docks_Available` 
   
-  then Allocate_Bikes = Docks_Available - End_Trip 
+  `then Allocate_Bikes = Docks_Available - End_Trip`
   
-else Bike_Required`
+`else Bike_Required`
 
 Note : `Bikes_Required = Start Trips on Station` 
 
