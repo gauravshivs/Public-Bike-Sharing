@@ -5,7 +5,7 @@ Developed By: Gaurav Shivhare
 Date: 21, Feb 2019 
 
 Description: Performing detailed analysis of SF Bay Area Bike Share 
-l
+
 Data Source: https://www.kaggle.com/benhamner/sf-bay-area-bike-share 
 
 Programming Language: Python 3
@@ -45,14 +45,13 @@ Note:  Status file is ignored due to big size and it is clearly visible it has a
 
 ## Approach
 
-Can be two
-1. Technical --- Based on Predicting the number of bikes required on real-time basis.
-2. Business  --- Based on Compromised Business (Practical)
+1. Business  - Based on Compromised Business (Practical) 
+
+2. Technical - Based on Predicting the number of bikes required on real-time basis.
 
 Note: Reallocation highly depends on the frequency of truck operators can afford and the capacity of the vehicle used.
 
 
-Approach
 1. 7 AM - 9 AM are generally peak hours for routing toward the business areas while 4 PM - 6 PM towards the residential area.
 So Technically we can identify the busy stations during these peak times, so it can be said the stations have a starting point in the morning hours are residential or connected (Station, Intercity Bus Stop) areas, and similarly, the starting points in evening hours are business areas.
 Hence, these stations can be provided with an efficient number of bikes from the non-busy stations at different windows by the operators.
@@ -84,8 +83,17 @@ Hence it can be said as the operator can be relaxed in minimum temperature month
 ## Prediction Model and Evaluation
 
 For the dynamic reallocation, a prediction model can be used to predict a number of start trips, end trips, bikes available and Dock available.
-Hence which can be used for reallocation by `Bikes_Required = Start_Trip - Bike Available - End Trip)`,
-and `if Bikes_Required > Docks_Available then Allocate_Bikes = Docks_Available - End_Trip else Bike_Required`
+Hence which can be used for reallocation by 
+
+`Bikes_Required = Start_Trip - Bike Available - End Trip)`,
+
+and 
+
+`if Bikes_Required > Docks_Available 
+  
+  then Allocate_Bikes = Docks_Available - End_Trip 
+  
+else Bike_Required`
 
 Note : `Bikes_Required = Start Trips on Station` 
 
