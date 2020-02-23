@@ -10,6 +10,7 @@ Programming Language : Python 3
 
 Tools : Jupyter Notebook, Tableau
 
+Note : Plotly graphs are not visible on Github, please use personal notebook for real widget experience.
 
 ## Business Requirements
 
