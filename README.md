@@ -1,4 +1,4 @@
-# Pubic-Bike-Sharing
+# Public-Bike-Sharing
 
 Developed By : Gaurav Shivhare Date : 21, Feb 2019 
 
